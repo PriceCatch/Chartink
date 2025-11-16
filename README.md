@@ -10,6 +10,9 @@ Please remember NOT to save your Atlas screeners in 'Private' mode.
 
 I am sharing three screener examples to help you get started.
 
+#### Usage examples:
+I have uploaded videos on how to use the shared code in my [https://www.youtube.com/@PriceCatch](https://www.youtube.com/@pricecatch) channel. Take a look there.
+
 #### Python & libraries:
 The code is in Python and pyproject.toml contains the libraries required for using the code shared by me. Use pip or uv to install them.
 
