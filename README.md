@@ -1,6 +1,6 @@
 ### Hi.
 
-As part of my Technical Analysis education and code sharing series, I am sharing python code written by me here for use by anyone interested. You will find examples of how to scan and fetch results from ChartInk. (NOTE: The examples will work with the current set up of ChartInk. However, if ChartInk changes the APIs at their end, the code shared here could fail.)
+As part of my Technical Analysis education and code sharing series, I am sharing python code written by me here for use by anyone interested. You will find examples of how to scan and fetch results from ChartInk. (NOTE: The examples will work with the current set up of ChartInk. However, if ChartInk changes the APIs at its end, the code shared here could fail.)
 
 #### ChartInk user account:
 To run these examples, you do not need an account with ChartInk.com.
