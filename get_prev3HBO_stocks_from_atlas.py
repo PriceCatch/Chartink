@@ -1,20 +1,21 @@
-# Copyright (c) 2025 S V SUDHARSHAN a.k.a PriceCatch.
-# visit http://github.com/PriceCatch.
-# 
-# This code is part of the PRICECATCH CHARTS project and is
-# licensed under the Creative Commons Attribution 4.0 International License.
-# To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.
-# 
-# Attribution:
-# When using this code in your project, please attribute it as follows:
-# - The first two lines must be placed in comments at the header of your code.
-# - If you are adding the code in a webpage, then, place the below phrase in the footer section
-#   of the webpage.
-#   PriceCatch Charts by S V SUDHARSHAN a.k.a PriceCatch is licensed under CC BY 4.0
-#
-# CREATE A TASK IN TASK SCHEDULER TO FIRST RUN AT 9.18 AM AND REPEAT EVERY 3 MINUTES TILL 9.45
+'''
+Copyright (c) 2025 S V SUDHARSHAN a.k.a PriceCatch.
+visit http://github.com/PriceCatch for more code and info.
+Watch my technical analysis videos at https://www.youtube.com/@PriceCatch
 
-# Python code
+Licensed under the Creative Commons Attribution 4.0 International License.
+To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.
+
+Attribution:
+- The first two lines must be placed in comments at the header of your code.
+
+- purpose: An example to extract previous 3H Breakout stocks from Chartink Atlas public Dashboard
+- Dashboard URL: https://chartink.com/dashboard/318199
+- The code uses Selenium to load the page, waits for the table to load, saves the page source,
+  and then uses BeautifulSoup and pandas to parse and save the data to a CSV file with cleaned headers.
+- first run at 9.18 AM and repeat every 3 minutes till 9.45 AM. This will capture stocks breaking out in the previous 3H candle
+  
+'''
 
 from selenium import webdriver
 from selenium.webdriver.edge.options import Options
@@ -34,7 +35,7 @@ driver = webdriver.Edge(options=options)  # Ensure msedgedriver is in PATH
 
 url = "https://chartink.com/dashboard/318199"
 
-OUTPUT_FILE_PATH = "C:/Users/svsud/PycharmProjects/ProfitCentric\stockslist/prev3H_BO_stocks_from_atlas.csv"
+OUTPUT_FILE_PATH = "/Users/svsud/Downloads/prev3H_BO_stocks_from_atlas.csv"
 
 try:
     # Load the dashboard

@@ -12,6 +12,8 @@
 #         "volume": 186378,
 #     },
 # ]
+# Purpose: To get list of tradeable stocks from ChartInk using their scanner API.
+# Watch my technical analysis videos at https://www.youtube.com/@PriceCatch to learn more on how to fetch the data.
 
 import requests
 import re
@@ -23,7 +25,7 @@ URL = "https://chartink.com/screener/process"
 COLUMNS_TO_DROP = ['sr', 'name', 'bsecode', 'per_chg', 'close', 'volume']
 
 # change this path as per your environment
-OUTPUT_FILE_PATH = r"C:\Users\svsud\PycharmProjects\ProfitCentric\stockslist/tradeable_stocks.csv"
+OUTPUT_FILE_PATH = "/Users/svsud/Downloads/tradeable_stocks.csv"
 
 # Paste the scan clause copied from ChartInk below
 scan_clause = '( {cash} ( ( {cash} ( market cap > 7999 and 180 days ago close > 20 ) ) ) ) '

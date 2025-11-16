@@ -12,6 +12,8 @@
 #         "volume": 186378,
 #     },
 # ]
+# purpose: To get list of stocks held by DII from ChartInk using their scanner API.
+# Watch my technical analysis videos at https://www.youtube.com/@PriceCatch to learn more on how to fetch the data.
 
 import requests
 import re
@@ -23,7 +25,7 @@ URL = "https://chartink.com/screener/process"
 COLUMNS_TO_DROP = ['sr', 'name', 'bsecode', 'per_chg', 'close', 'volume']
 
 # change this path as per your environment
-OUTPUT_FILE_PATH = r"C:\Users\svsud\PycharmProjects\ProfitCentric\stockslist\dii_holdings.csv"
+OUTPUT_FILE_PATH = "/Users/svsud/Downloads/dii_holdings.csv"
 
 # Paste the scan clause copied from ChartInk below
 scan_clause = (
